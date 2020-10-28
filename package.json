@@ -9,7 +9,7 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json",
+    "test": "cross-env NODE_ENV=test  jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -55,6 +55,8 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "chalk": "^4.1.0",
+    "cross-env": "7.0.2",
+    "dotenv": "8.2.0",
     "enzyme": "3.0.0",
     "enzyme-to-json": "3.0.1",
     "eslint-plugin-react": "^7.21.4",
