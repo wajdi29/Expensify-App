@@ -9,11 +9,12 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "cross-env NODE_ENV=test  jest --config=jest.config.json",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
+    "eslint": "^7.7.0",
     "babel-cli": "6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "7.1.1",
@@ -62,8 +63,7 @@
     "jest": "20.0.4",
     "live-server": "^1.2.1",
     "react-test-renderer": "16.0.0",
-    "webpack-dev-server": "2.5.1",
-    "eslint": "^7.7.0"
+    "webpack-dev-server": "2.5.1"
   },
   "engines": {
     "node": "14.8.0",
