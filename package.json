@@ -14,7 +14,6 @@
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
-    "eslint": "^7.7.0",
     "babel-cli": "6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "7.1.1",
@@ -24,10 +23,12 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
     "enzyme-adapter-react-16": "1.0.0",
+    "eslint": "^7.7.0",
     "eslint-plugin-babel": "^5.3.1",
     "express": "4.15.4",
     "extract-text-webpack-plugin": "3.0.0",
     "firebase": "7.24.0",
+    "history": "4.7.2",
     "moment": "2.18.1",
     "node-gyp": "^7.1.0",
     "node-sass": "4.14.1",
